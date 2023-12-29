@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/dist/output.css">
+        <title>Document</title>
+    </head>
+
+    <body id="body" class="px-3 box-border">
+
+        <nav class="flex justify-between py-6 text-gray-50">
+            <img src="./assets/images/logo.svg">
+            <img src="./assets/images/icon-menu.svg" class="sm:hidden" onclick="menu()">
+            <ul class="text-2xl  text-black hidden sm:flex">
+                <li class="pr-3 hover:text-softRed">Home </li>
+                <li class="pr-3 hov hover:text-softReder:text-softRed">New </li>
+                <li class="pr-3 hover:text-softRed">Popular </li>
+                <li class="pr-3 hover:text-softRed">Trending </li>
+                <li class="hover:text-softRed">Categories </li>
+            </ul>
+        </nav>
+        <section id="navMenu" class="fixed px-5  pt-6  h-full w-2/3 top-0 bg-white text-Verydarkblue right-0 hidden">
+            <div class="justify-end  flex">
+                <img class="" src="./assets/images/icon-menu-close.svg" onclick="closeMenu()">
+            </div>
+            <ul class="block pt-16  text-3xl">
+                <li class="pb-4">Home </li>
+                <li class="pb-4">New </li>
+                <li class="pb-4">Popular </li>
+                <li class="pb-4">Trending </li>
+                <li class="pb-4">Categories </li>
+            </ul>
+        </section>
+        <div id="overlay" class="fixed bg-Overlay w-1/3 h-full top-0 left-0  hidden"></div>
+
+        <div class="sm:flex sm:flex-row sm:gap-4">
+            <hero class="basis-2/3">
+                <img src="./assets/images/image-web-3-mobile.jpg" class="w-full sm:hidden">
+                <img src="./assets/images/image-web-3-desktop.jpg" class="w-full hidden sm:block">
+
+                <section class="pt-6 sm:flex ">
+
+                    <span class="block font-extrabold text-5xl pb-4 sm:text-4xl sm:basis-1/2 sm:pb-0">
+                        The Bright Future of Web 3.0?
+                    </span>
+                    <div class=" sm:basis-1/2">
+                        <span class="block text-lg text-Darkgrayishblue font-norma sm:text-xs">
+                            We dive into the next evolution of the web that claims to put the power of the platforms
+                            back
+                            into
+                            the hands of the people. But is it really fulfilling its promise?
+                        </span>
+                        <button class="hover:bg-Verydarkblue block bg-softRed my-6 py-3 px-3 font-bold text-Off-white text-2xl w-3/5 sm:text-xl sm:my-0 sm:mt-5 sm:py-1">
+                            READ
+                            MORE</button>
+                    </div>
+                </section>
+            </hero>
+            <section class="bg-Verydarkblue text-Off-white px-5 sm:basis-1/3">
+                <span class="block text-softOrange font-bold text-3xl py-5 sm:pt-2 sm:pb-3 ">New</span>
+                <span class=" pt-3 block font-bold text-xl sm:text-sm hover:text-softOrange">
+                    Hydrogen VS Electric Cars
+                </span>
+                <span class="block pb-6 text-lg  sm:text-sm text-Grayishblue sm:pb-3">
+                    Will hydrogen-fueled cars ever catch up to EVs?
+                </span>
+                <hr>
+                <span class=" pt-3 block font-bold text-xl sm:text-sm hover:text-softOrange"> Downsides of AI Artistry</span>
+                <span class="block pb-6 text-lg text-Grayishblue sm:text-sm sm:pb-3">
+                    What are the
+                    possible adverse effects of on-demand AI image generation?
+                </span>
+                <hr>
+                <span class="pt-3 block font-bold text-xl sm:text-sm hover:text-softOrange"> Is VC Funding Drying Up?</span>
+                <span class="block pb-6 text-lg text-Grayishblue sm:text-sm">
+                    Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                </span>
+            </section>
+        </div>
+        <section class="pt-12 sm:flex" >
+            <div class="flex flex-row pb-5 ">
+                <div class=" shrink-0 ">
+                    <img src="./assets/images/image-retro-pcs.jpg" class="h-full w-20">
+                </div>
+                <div class=" pl-5">
+                    <span>
+                        <span class="text-Grayishblue text-3xl font-bold block ">
+                            01
+                        </span>
+                        <span class="block text-sm font-extrabold  hover:text-softRed">
+                            Reviving Retro PCs
+                        </span>
+                        <span class="text-sm">
+                            What happens when old
+                            PCs are given modern upgrades?
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-row pb-5">
+                <div class="shrink-0">
+                    <img src="./assets/images/image-top-laptops.jpg" class="h-full w-20">
+                </div>
+                <div class=" pl-5">
+                    <span>
+                        <span class="block text-Grayishblue text-3xl font-bold"> 02</span>
+                        <span class="block text-sm font-extrabold  hover:text-softRed"> 
+                            Top 10 Laptops of 2022
+                        </span>
+                        <span class="text-sm">
+                            Our best picks for various needs and budgets.
+                        </span>
+                    </span>
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-row pb-5">
+                <div class="shrink-0">
+                    <img src="./assets/images/image-gaming-growth.jpg"  class="h-full w-20">
+                </div>
+                <div class=" pl-5">
+                    <span class="block text-Grayishblue text-3xl font-bold">
+                        03
+                    </span>
+                    <span class="block text-sm font-extrabold hover:text-softRed">
+                        The Growth of Gaming</span>
+                    <span class="text-sm">
+                        How the pandemic has sparked fresh opportunities.
+                    </span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const menu = () => {
+                console.log("KOI")
+                document.getElementById("navMenu").classList.remove("hidden");
+                document.getElementById("overlay").classList.remove("hidden")
+                document.getElementById("body").classList.add("overflow-hidden")
+            }
+            const closeMenu = () => {
+                document.getElementById("navMenu").classList.add("hidden");
+                document.getElementById("overlay").classList.add("hidden")
+                document.getElementById("body").classList.remove("overflow-hidden")
+            }
+        </script>
+    </body>
+
+</html>
